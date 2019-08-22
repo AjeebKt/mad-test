@@ -85,8 +85,8 @@ body {
   flex-wrap: wrap;
 }
 .wrapper .left {
-  flex: 0 0 60%;
-  max-width: 60%;
+  flex: 0 0 55%;
+  max-width: 55%;
   min-height: 100vh;
   /* background: rgb(19, 10, 166); */
   /* background: linear-gradient(
@@ -100,12 +100,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column-reverse;
+  flex-flow: column;
 }
 
 .wrapper .right {
-  flex: 0 0 40%;
-  max-width: 40%;
+  flex: 0 0 45%;
+  max-width: 45%;
   overflow: hidden;
 }
 
@@ -120,14 +120,18 @@ body {
   align-items: center; */
   width: 95%;
   max-width: 900px;
-  padding: 40px;
+  padding: 50px 35px  ;
   border: 1px solid #fff;
   margin-left: 40%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
 }
 .main-box .box {
   color: #fff;
   min-height: 200px;
   margin-left: -75px;
+  width: 90%;
   /* width: 95%;
   max-width: 900px;
   padding: 40px;
@@ -136,6 +140,7 @@ body {
 .main-box .box p {
   margin: 0;
   color: #dedede;
+  font-size: 16px;
 }
 .main-box .box h3,
 .main-box .box h5 {
@@ -143,14 +148,17 @@ body {
   font-weight: 500;
 }
 .main-box .box h3 {
-  font-size: 32px;
+  font-size: 44px;
   line-height: 1.4;
 }
 .main-box .box h5 {
-  font-size: 20px;
+  font-size: 24px;
+  margin-bottom: -10px;
 }
+
+/* Slider */
 .main-box .slider {
-  margin: 0 0 30px;
+  margin: 0 0 10px;
 }
 
 .material_input {
