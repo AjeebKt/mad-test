@@ -95,6 +95,12 @@ body {
     rgba(9, 51, 70, 1) 0%,
     rgba(9, 148, 176, 1) 97%
   ); */
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column-reverse;
 }
 
 .wrapper .right {
@@ -108,16 +114,24 @@ body {
 .main-box {
   position: relative;
   z-index: 10;
-  height: 100vh;
+  /* height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  width: 95%;
+  max-width: 900px;
+  padding: 40px;
+  border: 1px solid #fff;
+  margin-left: 40%;
 }
 .main-box .box {
   color: #fff;
   min-height: 200px;
-  margin-left: -50px;
-  width: 600px;
+  margin-left: -75px;
+  /* width: 95%;
+  max-width: 900px;
+  padding: 40px;
+  border: 1px solid #fff; */
 }
 .main-box .box p {
   margin: 0;
@@ -399,6 +413,16 @@ footer {
   z-index: 110;
 }
 
+footer .social-links a {
+  padding: 8px;
+  margin-right: 8px;
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .copy-write {
+  font-size: 12px;
+  color: #dedede;
+}
 footer .social-links > * {
   display: inline-block;
   vertical-align: middle;
@@ -408,6 +432,7 @@ footer .inner-box {
   justify-content: space-between;
   align-items: center;
 }
+
 /* Music wave */
 .music-bg {
   display: inline-block;
