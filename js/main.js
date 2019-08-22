@@ -62,8 +62,6 @@ window.onload = function () {
 /* Sound wave */
 var audioOff = document.getElementById("audioOff");
 audioOff.addEventListener("click", function () {
-    console.log('asfadf');
-    
     if (audioOff.classList.contains("audio-on")) {
         audioOff.classList.remove("audio-on");
     } else {
