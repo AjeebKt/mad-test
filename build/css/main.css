@@ -124,7 +124,8 @@ body {
 .main-box .box p {
   margin: 0;
   color: #dedede;
-  font-size: 18px; }
+  font-size: 18px;
+  line-height: 1.4; }
 
 .main-box .box h3,
 .main-box .box h5 {
@@ -146,11 +147,11 @@ body {
 .material_input {
   position: relative;
   /* margin-bottom: 45px; */
-  margin-top: 15px; }
+  margin-top: 23px; }
 
 .material_input input {
   background: none;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 90%;
@@ -165,7 +166,7 @@ body {
 
 .material_input label {
   color: #dedede;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   position: absolute;
   pointer-events: none;
@@ -179,7 +180,7 @@ body {
 .material_input input:valid ~ label {
   font-size: 14px;
   color: #dedede;
-  top: -20px; }
+  top: -12px; }
 
 .material_input .bar {
   position: relative;
