@@ -122,35 +122,100 @@
   animation-delay: 5s;
 }
 
-.main-box h5 {
-  -webkit-animation-name: fadeComeUp;
-  animation-name: fadeComeUp;
+.main-box {
+  -webkit-animation-name: scaleIn;
+  animation-name: scaleIn;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  h5 {
+    -webkit-animation-name: fadeComeUp;
+    animation-name: fadeComeUp;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+  }
+  .slider {
+    -webkit-animation-name: fadeComeUp;
+    animation-name: fadeComeUp;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  .text-combo {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 4.5s;
+    animation-delay: 4.5s;
+  }
 }
-.main-box .slider {
-  -webkit-animation-name: fadeComeUp;
-  animation-name: fadeComeUp;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+
+.main-box {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%);
+  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 295px;
+  -webkit-animation-name: bgRun;
+  animation-name: bgRun;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
-.main-box .text-combo {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-  -webkit-animation-duration: 0.9s;
-  animation-duration: 0.9s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 4.5s;
-  animation-delay: 4.5s;
+
+@keyframes bgRun {
+  0% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+  25% {
+    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
+  }
+  50% {
+    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
+  }
+  75% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
+  }
+  100% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 295px;
+  }
+}
+
+@-webkit-keyframes bgRun {
+  0% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+  25% {
+    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
+  }
+  50% {
+    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
+  }
+  75% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
+  }
+  100% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 295px;
+  }
 }
 
 @-webkit-keyframes fadeComeUp {
@@ -181,17 +246,6 @@
   }
 }
 
-.main-box {
-  -webkit-animation-name: scaleIn;
-  animation-name: scaleIn;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-}
-
 @-webkit-keyframes scaleIn {
   0% {
     opacity: 0;
@@ -203,6 +257,7 @@
   50% {
     opacity: 1;
   }
+
   to {
     transform-origin: 0 0;
   }
@@ -219,6 +274,7 @@
   50% {
     opacity: 1;
   }
+
   to {
     transform-origin: 0 0;
   }
