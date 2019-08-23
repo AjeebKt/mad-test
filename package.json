@@ -1,0 +1,29 @@
+{
+  "name": "mad-test",
+  "version": "1.0.0",
+  "description": "mad test",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjeebKt/mad-test.git"
+  },
+  "keywords": [
+    "mad",
+    "test"
+  ],
+  "author": "Ajeeb Kt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AjeebKt/mad-test/issues"
+  },
+  "homepage": "https://github.com/AjeebKt/mad-test#readme"
+}
