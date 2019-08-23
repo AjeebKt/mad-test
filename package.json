@@ -1,16 +1,11 @@
 {
   "name": "mad-test",
   "version": "1.0.0",
-  "description": "mad test",
+  "description": "",
   "main": "gulpfile.js",
-  "dependencies": {
-    "del": "^5.0.0",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -25,5 +20,21 @@
   "bugs": {
     "url": "https://github.com/AjeebKt/mad-test/issues"
   },
-  "homepage": "https://github.com/AjeebKt/mad-test#readme"
+  "homepage": "https://github.com/AjeebKt/mad-test#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "del": "^5.0.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-livereload": "^4.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "run-sequence": "^2.2.1"
+  }
 }
